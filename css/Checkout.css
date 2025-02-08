@@ -1,0 +1,80 @@
+/* Estilos para a página de checkout */
+.checkout-summary {
+    margin-top: 40px;
+}
+
+.checkout-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.checkout-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.checkout-item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.checkout-item-details h3 {
+    font-size: 1.2em;
+    color: #004d7a;
+}
+
+.checkout-item-details p {
+    font-size: 1.1em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.checkout-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9f4f9;
+    border-radius: 8px;
+}
+
+.checkout-total h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.payment-methods {
+    margin-top: 40px;
+}
+
+.payment-option {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.checkout-actions {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.place-order-button {
+    padding: 12px 20px;
+    background-color: #004d7a;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.place-order-button:hover {
+    background-color: #003f5c;
+}

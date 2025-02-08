@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <header>
+       
+    </header>
+
+    <main>
+        <h1>Carrinho de Compras</h1>
+
+        <div class="cart-items">
+            <!-- Lista de itens do carrinho -->
+            <div class="cart-item" id="cartItem1">
+                <img src="product1.jpg" alt="Produto 1">
+                <div class="cart-item-details">
+                    <h3>Produto 1</h3>
+                    <p>R$ 19,99</p>
+                    <input type="number" id="qty1" value="1" min="1" onchange="updateCart()">
+                    <button onclick="removeFromCart('cartItem1')">Remover</button>
+                </div>
+            </div>
+
+            <div class="cart-item" id="cartItem2">
+                <img src="product2.jpg" alt="Produto 2">
+                <div class="cart-item-details">
+                    <h3>Produto 2</h3>
+                    <p>R$ 29,99</p>
+                    <input type="number" id="qty2" value="1" min="1" onchange="updateCart()">
+                    <button onclick="removeFromCart('cartItem2')">Remover</button>
+                </div>
+            </div>
+
+            <!-- Adicionar mais itens conforme necessário -->
+        </div>
+
+        <div class="cart-total">
+            <h3>Total: <span id="totalPrice">R$ 49,98</span></h3>
+            <a href="checkout.html" class="checkout-button">Finalizar Compra</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shopping Digital - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/js/cart.js"></script>
+</body>
+</html>

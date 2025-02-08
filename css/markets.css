@@ -1,0 +1,199 @@
+/* Estilos gerais */
+/* Evitar o overflow horizontal em qualquer elemento */
+* {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #004d7a;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos da página de mercados */
+main {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    background-color: #e9f4f9;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #004d7a;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+}
+
+.market-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.market-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.market-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.market-card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.market-card-content h3 {
+    color: #004d7a;
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.market-card-content p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.market-card-content .view-button {
+    padding: 12px 20px;
+    background-color: #004d7a;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.market-card-content .view-button:hover {
+    background-color: #003f5c;
+}
+
+/* Estilos das avaliações */
+.rating {
+    font-size: 1.2em;
+    color: #ffb400; /* Cor dourada para estrelas */
+    margin-bottom: 20px;
+}
+
+.rating span {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+
+/* Estilos do footer */
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #f4f4f9;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    main {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .market-card-content h3 {
+        font-size: 1.6em;
+    }
+}
+/* Filtros */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.filters input[type="text"] {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 60%;
+}
+
+.filters select {
+    padding: 12px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 30%;
+}
+
+/* Estilos dos cartões dos mercados */
+.market-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    background-color: #e9f4f9;
+}

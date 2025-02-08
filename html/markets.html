@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercados - Shopping Digital</title>
+    <link rel="stylesheet" href="/css/markets.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Shopping Digital</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="markets.html">Mercados</a></li>
+                <li><a href="comparison.html">Comparar Preços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Mercados Disponíveis</h1>
+    
+        <!-- Filtros -->
+        <div class="filters">
+            <!-- Barra de busca -->
+            <input type="text" id="searchInput" placeholder="Buscar mercados..." onkeyup="filterMarkets()">
+    
+            <!-- Filtro por categoria -->
+            <select id="categorySelect" onchange="filterMarkets()">
+                <option value="">Todas as Categorias</option>
+                <option value="supermercado">Supermercado</option>
+                <option value="farmacia">Farmácia</option>
+                <option value="padaria">Padaria</option>
+                <option value="eletronicos">Eletrônicos</option>
+            </select>
+        </div>
+    
+        <!-- Cartões dos mercados -->
+        <div class="market-cards" id="marketCards">
+            <!-- Exemplo de cartão de mercado -->
+            <div class="market-card" data-category="supermercado">
+                <img src="market1.jpg" alt="Mercado 1">
+                <div class="market-card-content">
+                    <h3>Mercado 1</h3>
+                    <p>Supermercado com diversos produtos frescos.</p>
+                    <div class="rating">
+                        <span>★★★★☆</span>
+                    </div>
+                    <a href="/html/market-detail.html" class="view-button">Ver mais</a>
+                </div>
+            </div>
+                
+            <!-- Adicione mais cartões conforme necessário -->
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2025 Shopping Digital - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="/js/markets.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="/css/Checkout.css">
+</head>
+<body>
+    <header>
+        <nav>
+           
+        </nav>
+    </header>
+
+    <main>
+        <h1>Finalizar Compra</h1>
+
+        <div class="checkout-summary">
+            <h2>Resumo do Carrinho</h2>
+            <div class="checkout-item">
+                <img src="product1.jpg" alt="Produto 1">
+                <div class="checkout-item-details">
+                    <h3>Produto 1</h3>
+                    <p>R$ 19,99 x 1</p>
+                </div>
+            </div>
+
+            <div class="checkout-item">
+                <img src="product2.jpg" alt="Produto 2">
+                <div class="checkout-item-details">
+                    <h3>Produto 2</h3>
+                    <p>R$ 29,99 x 1</p>
+                </div>
+            </div>
+
+            <div class="checkout-total">
+                <h3>Total: <span id="checkoutTotal">R$ 49,98</span></h3>
+            </div>
+        </div>
+
+        <div class="payment-methods">
+            <h2>Escolha o Método de Pagamento</h2>
+            <div class="payment-option">
+                <input type="radio" id="pix" name="payment" value="pix">
+                <label for="pix">Pix</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="card" name="payment" value="card">
+                <label for="card">Cartão de Crédito</label>
+            </div>
+        </div>
+
+        <div class="checkout-actions">
+            <button class="place-order-button" onclick="confirmOrder()">Confirmar Pedido</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shopping Digital - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/js/Checkout.js"></script>
+</body>
+</html>

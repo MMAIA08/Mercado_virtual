@@ -1,0 +1,155 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: linear-gradient(135deg, #f4f4f9, #e1ecf0);
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #004d7a;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h2 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos do formulário de login */
+main {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(20px);
+}
+
+main:hover {
+    transform: translateY(0);
+}
+
+h1 {
+    text-align: center;
+    color: #004d7a;
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1em;
+    outline: none;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #004d7a;
+    box-shadow: 0 0 8px rgba(0, 77, 122, 0.5);
+}
+
+button[type="submit"] {
+    padding: 14px;
+    border: none;
+    background-color: #004d7a;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #003f5c;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 30px;
+    transition: color 0.3s;
+}
+
+footer:hover {
+    color: #004d7a;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 600px) {
+    main {
+        padding: 30px;
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
